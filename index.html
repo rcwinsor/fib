@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fibonacci Sequence (Rachel Winsor)</title>
+    </head>
+    <body>
+    <div id = "userInterface" class="container">
+            <div id = "controlPanel">
+                <button id = "calc" onclick="fibSeq()" class="w3-btn w3-white w3-border w3-ripple glyphicon glyphicon-play" ></button>
+            </div>
+            <div id = "inputPanel">
+                <label for="n">Length of Fibonacci Sequence: </label>
+                <input type="number" id="n" value="5"><br>
+            </div>
+        </div>
+    
+        <!-- Javascript -->
+        <script type = "text/javascript">
+        var n = document.getElementById("n").value;
+        function fibSeq(n){
+          if(n==0){return 0;}
+          if(n==1){return 1;}
+          return fibSeq(n-1)+fibSeq(n-2);
+        }
+
+
+        </script>
+    </body>
+</html>
